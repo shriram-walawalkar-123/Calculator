@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .modal{
+            display: none;
+        }
+        .modal.active{
+            display: block;
+        }
+    </style>
+
+</head>
+<!-- <body>
+    <div class="flex flex-col justify-center items-center space-y-10">
+    <div>Game of a Incerement and Decrement</div>
+
+    <div class="flex flex-row space-evenly">
+        <button onclick="decrement()">
+            <div class="text:4xl border border-black pl-5 pr-5">-</div>
+        </button>
+        <div id="counter" class="text:bold w-10 border border-black  flex items-center justify-center">0</div>
+        <button onclick="increment()">
+            <div class="text:4xl border border-black pl-5 pr-5">+</div>
+        </button>
+    </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body> -->
+
+
+<body>
+    <div class="bg-lime-200 flex flex-col space-y-4 border border-black w-10/12 pl-2 pt-2 pb-2 mb-4">
+        <img src="./profile.png" alt="profile" class="rounded-full h-20 w-20">
+        <div>
+            <span>Shriram Walawalkar</span>
+        </div>
+        <div>CSE Student</div>
+        <div class="flex flex-row space-x-4">
+            <button onclick="openModal()" class="border border-black pl-2 pr-2">
+                <i class="fa-solid fa-share"></i>
+                <span>Share my profile</span>
+            </button>
+            <button class="border border-black pl-2 pr-2">
+                <span>Follow Me</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Modal Component -->
+     <div class="modal">
+      <div class="flex space-x-4 pb-4 pt-4 bg-slate-200 w-10/12 border border-black border-t-0 border-l-0 border-r-0 ">
+        <span>Share my profile</span>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+      </div>
+
+     <h3 class="pb-2 bg-slate-200 w-10/12 ">Share this via</h3>
+     <div class="flex space-x-4 bg-slate-200 w-10/12 ">
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+     </div>
+</div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>   
+</body>
+</html>
